@@ -4,11 +4,9 @@ import android.app.Activity
 import android.graphics.Color
 import android.os.Bundle
 import com.amap.api.maps.AMap
+import com.amap.api.maps.CameraUpdateFactory
 import com.amap.api.maps.MapView
-import com.amap.api.maps.model.BitmapDescriptorFactory
-import com.amap.api.maps.model.LatLng
-import com.amap.api.maps.model.MarkerOptions
-import com.amap.api.maps.model.PolygonOptions
+import com.amap.api.maps.model.*
 
 class KotlinActivity : Activity() , AMap.OnMapLoadedListener{
 
@@ -57,6 +55,8 @@ class KotlinActivity : Activity() , AMap.OnMapLoadedListener{
      */
     override fun onMapLoaded() {
 
+        amap!!.moveCamera(CameraUpdateFactory.zoomTo(4f))
+
         addMarker();
         addPolyline();
     }
@@ -66,7 +66,7 @@ class KotlinActivity : Activity() , AMap.OnMapLoadedListener{
      */
     private fun addPolyline() {
 
-        amap!!.addPolygon(PolygonOptions().add(BEIJING,SHANGHAI,CHENGDU).fillColor(Color.GRAY).strokeWidth(20f))
+        amap!!.addPolyline(PolylineOptions().add(BEIJING,SHANGHAI,CHENGDU).color(Color.GREEN).width(20f).zIndex(1f))
     }
 
     /**
