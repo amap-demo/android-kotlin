@@ -36,3 +36,25 @@
     }
 ```
 
+
+----
+
+### Android Studio 使用 Kotlin 注意事项
+
+#### Kotlin工程配置
+1. 使用Android Studio打开工程
+2. 选择Tools-Kotlin-Config Kotlin in Porject
+3. build.gradle里会出现 apply plugin: 'kotlin-android' 和 compile "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
+4. 配置完成后便可正常使用
+
+
+#### Java转Kotlin
+1. 使用Android Studio打开工程
+2. 选择对应.java 文件
+3. 选择 Code-Convert Java File to Kotlin File
+
+#### Kotlin工程引入地图SDK
+1. Java工程引入SDK方式还可以继续使用
+2. 在gradle中  implementation 'com.amap.api:3dmap:latest.integration' 或者放到libs目录下
+3. JAVA引入包方式也可以直接使用 如引入MapView import com.amap.api.maps.MapView
+	
