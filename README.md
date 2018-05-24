@@ -58,3 +58,5 @@
 2. 在gradle中  implementation 'com.amap.api:3dmap:latest.integration' 或者放到libs目录下
 3. JAVA引入包方式也可以直接使用 如引入MapView import com.amap.api.maps.MapView
 	
+
+<font color='red'>注：如有问题、请通过lbs.amap.com找到我们</font>
