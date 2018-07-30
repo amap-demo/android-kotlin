@@ -15,9 +15,22 @@
 - [Android Studio工程搭建方法](http://lbs.amap.com/api/android-sdk/guide/creat-project/android-studio-creat-project/#add-jars). 
 - [通过maven库引入SDK方法](http://lbs.amap.com/api/android-sdk/guide/create-project/android-studio-create-project#gradle_sdk).
 
-### 实现方法
+### 覆盖物实现方法
 
 ```
+	/**
+     * 添加面
+     */
+    private fun addPolygon() {
+
+
+        amap!!.moveCamera(CameraUpdateFactory.newLatLngZoom(latlng5,9.5f))
+
+        amap!!.addPolygon(PolygonOptions().add(latlng0,latlng1,latlng2).fillColor(Color.rgb(0,150,210)).strokeWidth(0.0f).zIndex(1.0f))
+        amap!!.addPolygon(PolygonOptions().add(latlng1,latlng2,latlng4,latlng3).fillColor(Color.rgb(243,122,68)).strokeWidth(0.0f).zIndex(1.0f))
+        amap!!.addPolygon(PolygonOptions().add(latlng3,latlng5,latlng6).fillColor(Color.rgb(75,125,218)).strokeWidth(0.0f).zIndex(1.0f))
+    }
+    
  	/**
      * 添加线
      */
