@@ -15,6 +15,8 @@
 - [Android Studio工程搭建方法](http://lbs.amap.com/api/android-sdk/guide/creat-project/android-studio-creat-project/#add-jars). 
 - [通过maven库引入SDK方法](http://lbs.amap.com/api/android-sdk/guide/create-project/android-studio-create-project#gradle_sdk).
 
+### 截图
+![Screenshot](./AMap_Kotlin/screenshot/screenshot0.png)
 ### 覆盖物实现方法
 
 ```
@@ -73,3 +75,6 @@
 	
 
 <font color='red'>注：如有问题、请通过lbs.amap.com找到我们</font>
+
+## 扫一扫安装
+![Screenshot]( ./AMap_Kotlin/apk/downurl.png)
