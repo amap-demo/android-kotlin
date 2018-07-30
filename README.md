@@ -16,7 +16,7 @@
 - [通过maven库引入SDK方法](http://lbs.amap.com/api/android-sdk/guide/create-project/android-studio-create-project#gradle_sdk).
 
 ### 截图
-![Screenshot](./AMap_Kotlin/screenshot/screenshot0.png)
+<img src="./AMap_Kotlin/screenshot/screenshot0.png" width="50%" height="50%" />
 ### 覆盖物实现方法
 
 ```
